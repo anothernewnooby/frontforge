@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Head.astro';
+import Header from '../components/Header.astro'
+import Home from '../components/Home.astro';
+import About from '../components/About.astro';
+---
+
+<Layout>
+	<main>
+		<Header />
+		<Home/>
+		<About/>
+	</main>
+</Layout>
+
+<style>
+	main{
+		background-color: var(--blanco);
+		scroll-behavior: smooth;
+	}
+	
+</style>

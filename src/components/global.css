@@ -1,0 +1,17 @@
+:root{
+    --blanco: #FFF7ED;
+    --negro: #1C1917;
+    --rojo: #ee5d5d;
+    --texto: 'Outfit', sans-serif;
+    --titulo: "Tiro Telugu", serif;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }

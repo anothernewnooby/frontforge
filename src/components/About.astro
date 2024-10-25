@@ -1,0 +1,97 @@
+<section class="section-about">
+    <div class="about">
+        <h3>About</h3>
+        <p>Transformamos ideas en experiencias digitales elegantes y minimalistas. Nuestro enfoque combina diseño intencional con código limpio, creando interfaces que no solo cautivan visualmente, sino que funcionan de manera excepcional.</p>
+        <p>Como artesanos digitales, moldeamos trabajos únicos donde las herramientas modernas se encuentran con el cuidado meticuloso del detalle. Nos destacamos por entregar soluciones web que perduran en el tiempo, un píxel a la vez.</p>
+        <div class="superior"></div>
+        <div class="inferior"></div>
+    </div>
+</section>
+
+<style>
+.section-about {
+    width: 130rem;
+    height: 92dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    max-width: 90rem;
+    height: auto;
+    margin-top: -6rem;
+    border: 0.15rem solid var(--negro);
+    padding: 5rem;
+
+    h3 {
+        font-family: var(--texto);
+        font-size: 4rem;
+        margin: 0 auto;
+        color: var(--negro);
+    }
+
+    p {
+        font-family: var(--texto);
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+}
+
+.superior {
+    position: absolute;
+    width: 80%;
+    height: 1rem;
+    background-color: var(--blanco);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-top: -0.5rem;
+}
+
+.inferior {
+    position: absolute;
+    width: 80%;
+    height: 1rem;
+    background-color: var(--blanco);
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    margin-bottom: -0.5rem;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .section-about {
+        width: 100%; /* Cambia el ancho a 100% en pantallas pequeñas */
+        height: auto; /* Ajusta la altura a auto */
+        padding: 1rem; /* Añade un poco de espaciado */
+    }
+
+    .about {
+        max-width: 80%; /* Asegura que el contenido se ajuste al ancho */
+        margin-top: 0; /* Restablece el margen superior */
+        padding: 2rem; /* Reduce el padding */
+    }
+
+    .superior,
+    .inferior {
+        width: 90%; /* Aumenta el ancho de los bordes */
+        height: 0.5rem; /* Reduce la altura de los bordes */
+    }
+
+    .about h3 {
+        font-size: 3rem; /* Reduce el tamaño de la fuente del encabezado */
+    }
+
+    .about p {
+        font-size: 2rem; /* Reduce el tamaño de la fuente del párrafo */
+    }
+}
+
+        
+</style>

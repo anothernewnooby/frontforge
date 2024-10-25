@@ -27,8 +27,8 @@ import '../components/normalize.css';
             <div class="a-prueba" transition-style="in:square:hesitate">
                 <a href="#projects">Projects</a>            
             </div>
-            <div class="a-prueba" transition-style="in:square:hesitate">
-                <a href="#contact">Contact</a>
+            <div class="a-prueba_contact" transition-style="in:square:hesitate">
+                <a class="contacto" href="#contact">Contact</a>
             </div>
         </nav>
         
@@ -69,6 +69,7 @@ import '../components/normalize.css';
             justify-content: space-between;
             align-items: center;
             width: 40rem;
+            
 
             .a-prueba {
                 display: flex;
@@ -79,14 +80,14 @@ import '../components/normalize.css';
                 transition: background-color 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: black;
+                    background-color: var(--negro);
                 }
             }
 
             a {
                 font-family: var(--texto);
                 font-size: 2.3rem;
-                font-weight: 300;
+                font-weight: 200;
                 color: var(--negro);
                 text-decoration: none;
                 padding: 0.2rem 0.5rem;
@@ -97,6 +98,20 @@ import '../components/normalize.css';
                     color: var(--blanco);
                     transition: background-color 0.5s ease;
                     cursor: pointer;
+                }
+            }
+
+            .a-prueba_contact{
+                border: 0.3rem solid var(--negro);
+                background-color: var(--negro);
+                
+                a{
+                    color: var(--blanco);
+                    font-weight: 500;
+                }
+
+                &:hover{
+                    background-color: var(--blanco);
                 }
             }
         }

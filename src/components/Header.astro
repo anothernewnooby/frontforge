@@ -18,16 +18,16 @@ import '../components/normalize.css';
         </div>
         
         <nav class="navbar">
-            <div class="a-prueba" transition-style="in:square:hesitate">
+            <div class="a-prueba">
                 <a href="#home">Home</a>            
             </div>
-            <div class="a-prueba" transition-style="in:square:hesitate">
+            <div class="a-prueba">
                 <a href="#about">About</a>            
             </div>
-            <div class="a-prueba" transition-style="in:square:hesitate">
+            <div class="a-prueba">
                 <a href="#projects">Projects</a>            
             </div>
-            <div class="a-prueba_contact" transition-style="in:square:hesitate">
+            <div class="a-prueba_contact">
                 <a class="contacto" href="#contact">Contact</a>
             </div>
         </nav>
@@ -68,7 +68,7 @@ import '../components/normalize.css';
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 40rem;
+            width: 50rem;
             
 
             .a-prueba {
@@ -102,10 +102,15 @@ import '../components/normalize.css';
             }
 
             .a-prueba_contact{
+                
+                width: 20%;
                 border: 0.3rem solid var(--negro);
                 background-color: var(--negro);
                 
                 a{
+                    display: flex;
+                    justify-content: center;                
+                    width: 100%;
                     color: var(--blanco);
                     font-weight: 500;
                 }

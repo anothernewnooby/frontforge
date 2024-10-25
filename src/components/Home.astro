@@ -11,20 +11,21 @@
 </section>
 
 <style>
-    section {
-        width: 100%;
-        height: 92dvh;
-        background-color: var(--blanco);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+   section {
+    width: 100vw; /* Cambia a 100vw para asegurarte de que ocupe todo el ancho de la ventana */
+    height: 92dvh;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegúrate de que no haya desbordamiento */
+}
 
-    .imagen-logo {
-        width: 100%;
-        max-width: 55rem;
-        padding: 1rem; /* Añade un poco de padding para que el SVG no toque los bordes */
-    }
+.imagen-logo {
+    width: 100%;
+    max-width: 55rem;
+    padding: 1rem; /* Este padding es opcional */
+}
 
     .imagen-logo svg {
         width: 100%;

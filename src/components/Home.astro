@@ -12,36 +12,41 @@
 
 <style>
    section {
-    width: 100vw; /* Cambia a 100vw para asegurarte de que ocupe todo el ancho de la ventana */
+    width: 100%; /* Changed from 100vw to 100% */
     height: 92dvh;
     background-color: var(--blanco);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0; /* Removed auto */
+    padding: 0; /* Added padding: 0 */
+    box-sizing: border-box; /* Added box-sizing */
 }   
 
+.imagen-logo {
+    width: 100%;
+    max-width: 55rem;
+    padding: 1rem;
+    box-sizing: border-box; /* Added box-sizing */
+}
+
+.imagen-logo svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 100%;
+        padding: 0 1rem; /* Added horizontal padding */
+    }
     .imagen-logo {
-        width: 100%;
-        max-width: 55rem;
-        padding: 1rem; /* Este padding es opcional */
+        max-width: 100%; /* Changed from 80% to 100% */
+        padding: 0; /* Removed padding */
     }
-
-    .imagen-logo svg {
-        width: 100%;
-        height: auto;
-        display: block; /*  Elimina el espacio extra debajo del SVG */
-    }
-
-    @media (max-width: 768px) {
-        section{
-            width: 100%;
-        }
-        .imagen-logo {
-            max-width: 80%; /* Ajusta el tamaño máximo en pantallas pequeñas */
-        }
-    }
+}
 
     @keyframes square-in-hesitate {
         0% {
